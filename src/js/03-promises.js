@@ -22,7 +22,7 @@ form.addEventListener('submit', event => {
 
 
 
-function createPromise(position, delay) {
+const createPromise = (position, delay) => {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
       const shouldResolve = Math.random() > 0.3;
@@ -33,4 +33,4 @@ function createPromise(position, delay) {
       }
     }, delay);
   });
-}
+};
